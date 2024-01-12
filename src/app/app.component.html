@@ -1,3 +1,16 @@
-<h1 class="display-3">Hello</h1>
-<app-component1></app-component1>
-<app-component2></app-component2>
+<!-- llamada interna a las componente -->
+<!--
+<app-componente1></app-componente1>
+<app-componente2></app-componente2>
+-->
+
+<!-- llamada a las componentes usando routing-->
+<h1>Angular Router App</h1>
+<nav>
+  <ul>
+    <li><a routerLink="/first" >First Component</a></li>
+    <li><a routerLink="/second" >Second Component</a></li>
+  </ul>
+</nav>
+<!-- al final de menú es OBLIGATORIO poner router-outlet-->
+<router-outlet></router-outlet>
